@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<head> <h1>Este programa calcula tu peso en Marte o Júpiter</h1>
+<body>
+<script>
+
+var peso = parseInt(prompt("Introduzca tu peso en Kilos"));
+var planeta = parseInt(prompt("Introduzca el planeta \n1 es Marte, 2 es Júpiter"));
+var g_marte = 3.7;  
+var g_jupiter = 24.8;
+var g_tierra = 9.8; 
+
+if ( planeta == 1 )
+{
+    var peso_final = parseInt(peso * g_marte / g_tierra);
+    document.write("Tu peso en Marte es de " + peso_final + " Kilos");
+}
+
+else if ( planeta == 2 )
+{
+    var peso_final = parseInt(peso * g_jupiter / g_tierra);
+    document.write("Tu peso en Júpiter es de " + peso_final + " Kilos")
+}
+
+else
+{
+    document.write("Elige una opción válida para el planeta");
+}
+</script>
+</body>
+</head>
